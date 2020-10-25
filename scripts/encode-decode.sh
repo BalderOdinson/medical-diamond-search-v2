@@ -10,4 +10,4 @@ fi
 
 ../cmake-build-release/mds-encoder/mds-encoder-cli "$(basename "$1")"
 ../cmake-build-release/mds-decoder/mds-decoder-cli "$(basename "$1")"
-sh /home/oshikuru/Git/mds/scripts/make-video.sh "$1"
+sh make-video.sh "$1"
