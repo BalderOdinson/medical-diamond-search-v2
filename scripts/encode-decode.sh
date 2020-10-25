@@ -8,6 +8,6 @@ if [ ! -d $1 ]; then
     exit 1;
 fi
 
-/home/oshikuru/Git/mds/cmake-build-release/mds-encoder/mds-encoder-cli "$(basename "$1")"
-/home/oshikuru/Git/mds/cmake-build-release/mds-decoder/mds-decoder-cli "$(basename "$1")"
+../cmake-build-release/mds-encoder/mds-encoder-cli "$(basename "$1")"
+../cmake-build-release/mds-decoder/mds-decoder-cli "$(basename "$1")"
 sh /home/oshikuru/Git/mds/scripts/make-video.sh "$1"
